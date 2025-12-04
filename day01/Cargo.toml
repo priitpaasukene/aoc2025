@@ -1,0 +1,17 @@
+[package]
+name = "day01"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "day01-p1"
+path = "src/bin/p1.rs"
+
+[[bin]]
+name = "day01-p2"
+path = "src/bin/p2.rs"
+
+[dependencies]
+common = { path = "../common" }
+
+# Add day-specific dependencies here

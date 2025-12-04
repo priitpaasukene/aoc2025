@@ -1,0 +1,30 @@
+[workspace]
+resolver = "2"
+members = [
+    "common",
+    "day01",
+    "day02",
+    "day03",
+    "day04",
+    "day05",
+    "day06",
+    "day07",
+    "day08",
+    "day09",
+    "day10",
+    "day11",
+    "day12",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+# Common dependencies that all crates can inherit
+# Add as needed (e.g., itertools, regex, etc.)
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
